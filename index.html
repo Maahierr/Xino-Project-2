@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/alphacentauri" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body onload="show1()">
+    <div id="sidebar" class="sidebar">
+        <a href="#about" onclick="closeNav()">About Me</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#hobby" onclick="closeNav()">Hobbies</a>
+        <a href="#project" onclick="closeNav()">Projects</a>
+        <a href="#contact" onclick="closeNav()">Contact Me</a>
+    </div>
+    <button id="openbtn top" class="openbtn" onclick="openNav()">&#9776</button>
+    <div class="container" onclick="closeNav()">
+        <h1 style="text-align: center; font-family: 'AlphaCentauri', sans-serif; padding-top: 10px; color: #950710;">
+            Mahir Khanna</h1>
+        <div id="about">
+            <h1>About Me</h1>
+            <br>
+            <h4>I am a Rookie Frontend & Backend Developer and Python Programmer</h4>
+            <img src="Img1.svg" alt="Web Dev" class="img1">
+        </div>
+
+        <div id="hobby">
+            <h1 style="text-align: left;">Thing That I am Fond Of</h1>
+            <br>
+            <h4>
+                <img id="show"><br><br><br>
+                <p id="text"></p><br><br><br>
+                <img src="img2.png" onclick="show1()" style="width: 100px; height: 75px; padding: 3px; cursor: pointer;">
+                <img src="img3.png" onclick="show2()" style="width: 100px; height: 75px; padding: 3px; cursor: pointer;">
+                <img src="img4.png" onclick="show3()" style="width: 100px; height: 75px; padding: 3px; cursor: pointer;">
+                <img src="img5.png" onclick="show4()" style="width: 100px; height: 75px; padding: 3px; cursor: pointer;">
+            </h4>
+        </div>
+
+        <div id="project">
+            <h1>Projects</h1>
+            <h4>
+                <ul>
+                <li><a target="_blank" href="https://github.com/Maahierr/Snake-Game">Snake Game (Python)</a></li>
+                <li><a target="_blank" href="https://github.com/Maahierr/Your-Python-Assistant">Your Python Assistant (Python)</a></li>
+                <li><a target="_blank" href="https://github.com/Maahierr/Birthday-Guess-Programe">Birthday-Guess-Programe (Python)</a></li>
+                <li><a target="_blank" href="https://maahierr.github.io/Calculator/">Calculator  (Web)</a></li>
+                <li><a target="_blank" href="https://github.com/Maahierr/Xino-Project-1/">Alienware Pcs (Web)</a></li>
+                </ul>
+            </h4>
+        </div>
+        <br><br><br><br>
+        <div id="contact">
+            <h1>Contact Me</h1>
+            <a href="https://www.facebook.com" target="_blank"><img class="logo1" src="https://img.icons8.com/nolan/64/facebook.png"/></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="logo2" src="https://img.icons8.com/nolan/64/twitter.png"/></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="logo3" src="https://img.icons8.com/nolan/64/instagram-new.png"/></a>
+        </div>
+    </div>
+    <a href="#top" id="up">&#8593;</a>
+    <script src="script.js"></script>
+</body>
+
+</html>
