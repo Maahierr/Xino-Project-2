@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('http://fonts.cdnfonts.com/css/alphacentauri');
 
 *{
     margin: 0px;
@@ -141,6 +142,10 @@ a:hover{
 @keyframes rotation {
     100% {transform: rotate(360deg);}
   }
+
+.alpha{
+    font-family: 'AlphaCentauri', sans-serif;
+}
 
 #up{
     visibility: hidden;
